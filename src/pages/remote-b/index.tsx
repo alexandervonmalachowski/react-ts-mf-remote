@@ -1,4 +1,4 @@
-import { useCountContext } from "orchestrator/count_provider";
+import { useCountContext } from "remote_a/count_provider";
 import { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styles from "./_remote_b.module.css";

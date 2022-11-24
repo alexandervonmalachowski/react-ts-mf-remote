@@ -61,6 +61,7 @@ module.exports = {
       },
       remotes: {
         orchestrator: "orchestrator@http://localhost:3000/remoteEntry.js",
+        remote_a: "remote_a@http://localhost:3001/remoteEntry.js",
       },
       shared: {
         ...deps,

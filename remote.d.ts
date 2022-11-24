@@ -1,4 +1,4 @@
-declare module "orchestrator/count_provider" {
+declare module "remote_a/count_provider" {
   type CountContextType = {
     count: number;
     setCount?: (count: number) => void;
@@ -11,9 +11,18 @@ declare module "orchestrator/count_provider" {
   export default CountProvider;
 }
 
-declare module "orchestrator/layout" {
+declare module "remote_a/layout" {
   type LayoutProps = {
     children: React.ReactNode;
   };
   export const Layout: React.ComponentType<LayoutProps>;
+}
+
+declare module "remote_a/top_navigation" {
+  export const TopNavigation: React.ComponentType;
+}
+
+declare module "remote_a/global_css" {
+  const content: { [className: string]: string };
+  export default content;
 }
