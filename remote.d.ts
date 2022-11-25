@@ -18,11 +18,19 @@ declare module "remote_a/layout" {
   export const Layout: React.ComponentType<LayoutProps>;
 }
 
-declare module "remote_a/top_navigation" {
-  export const TopNavigation: React.ComponentType;
-}
-
 declare module "remote_a/global_css" {
   const content: { [className: string]: string };
   export default content;
+}
+
+declare module "remote_a/top_navigation" {
+  export type TopNavItem = {
+    path: string;
+    title: string;
+  };
+
+  type TopNavigationProps = {
+    routes: TopNavItem[];
+  };
+  export const TopNavigation: React.ComponentType<TopNavigationProps>;
 }

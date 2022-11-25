@@ -58,10 +58,13 @@ module.exports = {
       filename: "remoteEntry.js",
       exposes: {
         "./remote_b": "./src/pages/remote-b",
+        "./remote_b_about": "./src/pages/about",
+        "./remote_b_routes": "./src/utils/routes",
       },
       remotes: {
         orchestrator: "orchestrator@http://localhost:3000/remoteEntry.js",
         remote_a: "remote_a@http://localhost:3001/remoteEntry.js",
+        remote_b: "remote_b@http://localhost:3002/remoteEntry.js",
       },
       shared: {
         ...deps,

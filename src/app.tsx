@@ -8,10 +8,11 @@ import { Layout } from "remote_a/layout";
 
 import "remote_a/global_css";
 import { TopNavigation } from "remote_a/top_navigation";
+import localRoutes from "./utils/routes";
 
 const App = () => (
   <Layout>
-    <TopNavigation />
+    <TopNavigation routes={localRoutes("")} />
     <CountProvider>
       <Suspense fallback={<span>Loading...</span>}>
         <Routes>
