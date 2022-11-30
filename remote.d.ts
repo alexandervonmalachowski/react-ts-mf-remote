@@ -34,3 +34,7 @@ declare module "remote_a/top_navigation" {
   };
   export const TopNavigation: React.ComponentType<TopNavigationProps>;
 }
+
+declare module "remote_a/footer" {
+  export const Footer: React.ComponentType;
+}

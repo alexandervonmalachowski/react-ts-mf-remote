@@ -9,20 +9,24 @@ import { Layout } from "remote_a/layout";
 import "remote_a/global_css";
 import { TopNavigation } from "remote_a/top_navigation";
 import localRoutes from "./utils/routes";
+import { Footer } from "remote_a/footer";
 
 const App = () => (
-  <Layout>
+  <>
     <TopNavigation routes={localRoutes("")} />
-    <CountProvider>
-      <Suspense fallback={<span>Loading...</span>}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/*" element={<Notfound />} />
-        </Routes>
-      </Suspense>
-    </CountProvider>
-  </Layout>
+    <Layout>
+      <CountProvider>
+        <Suspense fallback={<span>Loading...</span>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/*" element={<Notfound />} />
+          </Routes>
+        </Suspense>
+      </CountProvider>
+    </Layout>
+    <Footer />
+  </>
 );
 
 export default App;
