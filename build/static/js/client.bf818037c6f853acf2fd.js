@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkremote_b=self.webpackChunkremote_b||[]).push([[760],{760:(e,t,l)=>{l.r(t),l.d(t,{default:()=>u});var n=l(166),r=l.n(n);const u=({children:e})=>r().createElement("div",null,r().createElement("h1",null,"About"))}}]);

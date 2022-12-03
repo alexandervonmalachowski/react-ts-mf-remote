@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkremote_b=self.webpackChunkremote_b||[]).push([[520],{520:(t,e,u)=>{u.r(e),u.d(e,{default:()=>a});const a=t=>[{path:`${t}`,title:"Remote B"},{path:`${t}about`,title:"About"}]}}]);

@@ -6,18 +6,24 @@
   "scripts": {
     "start": "webpack serve",
     "build": "yarn run clean && webpack --mode production",
-    "serve": "serve dist -p 3002",
-    "clean": "rimraf dist"
+    "serve": "serve dist -p 3001",
+    "clean": "rimraf dist && rimraf types && rimraf public/remote_b-dts.tgz"
   },
   "author": "Alexander von Malachowski",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
     "@types/react-router-dom": "^5.3.3",
+    "babel-loader": "^9.1.0",
     "css-loader": "^6.7.2",
+    "dts-loader": "^0.1.8",
     "file-loader": "^6.2.0",
+    "filemanager-webpack-plugin": "^8.0.0",
     "fork-ts-checker-webpack-plugin": "^7.2.13",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.0",
@@ -28,7 +34,8 @@
     "typescript": "^4.9.3",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.0",
-    "webpack-dev-server": "^4.11.1"
+    "webpack-dev-server": "^4.11.1",
+    "webpack-remote-types-plugin": "^0.2.7"
   },
   "dependencies": {
     "react": "^18.2.0",
