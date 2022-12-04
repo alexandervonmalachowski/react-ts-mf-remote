@@ -3,8 +3,8 @@ export type TopNavItem = {
     path: string;
     title: string;
 };
-type TopNavigationProps = {
+export type TopNavigationProps = {
     routes: TopNavItem[];
 };
-export declare const TopNavigation: ({ routes }: TopNavigationProps) => JSX.Element;
-export {};
+declare const TopNavigation: ({ routes }: TopNavigationProps) => JSX.Element;
+export default TopNavigation;

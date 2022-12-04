@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-type LayoutProps = {
+export type LayoutProps = {
     children: ReactNode;
 };
-export declare const Layout: ({ children }: LayoutProps) => JSX.Element;
-export {};
+declare const Layout: ({ children }: LayoutProps) => JSX.Element;
+export default Layout;

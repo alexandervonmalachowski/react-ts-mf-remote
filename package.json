@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack serve",
-    "build": "yarn run clean && webpack --mode production",
-    "serve": "serve dist -p 3001",
-    "clean": "rimraf dist && rimraf types && rimraf public/remote_b-dts.tgz"
+    "build": "yarn run clean:pre && webpack --mode production && yarn run clean:post",
+    "serve": "serve build -p 3002",
+    "clean:pre": "rimraf build && rimraf public/remote_b-dts.tgz",
+    "clean:post": "rimraf exposedTypes"
   },
   "author": "Alexander von Malachowski",
   "license": "ISC",

@@ -4,7 +4,7 @@ export type CountContextType = {
     setCount?: (count: number) => void;
 };
 export declare const useCountContext: () => CountContextType;
-type CountProviderProps = {
+export type CountProviderProps = {
     children: React.ReactNode;
 };
 declare const CountProvider: ({ children }: CountProviderProps) => JSX.Element;

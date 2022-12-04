@@ -4,12 +4,12 @@ import Home from "./pages/remote-b";
 import About from "./pages/about";
 import Notfound from "./pages/not-found";
 import CountProvider from "remote_a/count_provider";
-import { Layout } from "remote_a/layout";
+import Layout from "remote_a/layout";
 
 import "remote_a/global_css";
-import { TopNavigation } from "remote_a/top_navigation";
+import TopNavigation from "remote_a/top_navigation";
 import localRoutes from "./utils/routes";
-import { Footer } from "remote_a/footer";
+import Footer from "remote_a/footer";
 
 const App = () => (
   <>

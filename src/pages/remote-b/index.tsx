@@ -1,10 +1,10 @@
 import React from "react";
 import { useCountContext } from "remote_a/count_provider";
 import { ReactNode } from "react";
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./_remote_b.module.css";
 
-type PageType = {
+export type PageType = {
   children?: ReactNode;
 };
 
@@ -26,6 +26,7 @@ const Page = ({ children }: PageType) => {
           <button>To Remote B</button>
         </Link>
       )}
+      {children}
     </div>
   );
 };
