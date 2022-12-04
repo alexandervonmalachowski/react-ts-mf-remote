@@ -118,7 +118,7 @@ module.exports = (env, argv) => {
             archive: [
               {
                 source: `./exposedTypes/${moduleFederationConfig.name}`,
-                destination: `./${isProduction ? "build" : "public"}/${
+                destination: `./${isProduction ? "dist" : "public"}/${
                   moduleFederationConfig.name
                 }-dts.tgz`,
                 format: "tar",
