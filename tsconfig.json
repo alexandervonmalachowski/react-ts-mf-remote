@@ -18,19 +18,7 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "*": ["*", "types/*"],
-      "components/*": ["src/components/*"],
-      "features/*": ["src/features/*"],
-      "contexts/*": ["src/contexts/*"],
-      "providers/*": ["src/providers/*"],
-      "layouts/*": ["src/layouts/*"],
-      "types/*": ["types/*"],
-      "hooks/*": ["src/hooks/*"],
-      "utils/*": ["src/utils/*"],
-      "images/*": ["src/images/*"],
-      "icons/*": ["src/icons/*"],
-      "ingka/*": ["src/ingka/*"],
-      "pages/*": ["src/pages/*"]
+      "*": ["*", "types/*"]
     },
     "strict": false,
     "strictNullChecks": true,
