@@ -1,4 +1,3 @@
-const { resolve } = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { ModuleFederationPlugin } = require("webpack").container;
 const deps = require("./package.json").dependencies;
@@ -12,12 +11,9 @@ const moduleFederationConfig = {
   filename: "remoteEntry.js",
   exposes: {
     "./remote_b": "./src/pages/remote-b",
-    "./remote_b_about": "./src/pages/about",
     "./remote_b_routes": "./src/utils/routes",
   },
-  remotes: {
-    remote_a: "remote_a@http://localhost:3001/remoteEntry.js",
-  },
+  remotes: {},
   shared: {
     ...deps,
     react: { singleton: true, eager: true, requiredVersion: deps.react },
