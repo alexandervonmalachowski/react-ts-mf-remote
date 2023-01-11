@@ -1,6 +1,4 @@
-import { TopNavItem } from "remote_a/top_navigation";
-
-export default (baseName: string): TopNavItem[] => [
+export default (baseName: string): { path: string; title: string }[] => [
   {
     path: `${baseName}`,
     title: "Remote B",
