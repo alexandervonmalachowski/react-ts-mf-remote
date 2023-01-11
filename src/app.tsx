@@ -1,15 +1,16 @@
+import "remote_a/global_css";
+
 import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/remote-b";
+import CountProvider from "remote_a/count_provider";
+import Footer from "remote_a/footer";
+import Layout from "remote_a/layout";
+import TopNavigation from "remote_a/top_navigation";
+
 import About from "./pages/about";
 import Notfound from "./pages/not-found";
-import CountProvider from "remote_a/count_provider";
-import Layout from "remote_a/layout";
-
-import "remote_a/global_css";
-import TopNavigation from "remote_a/top_navigation";
+import Home from "./pages/remote-b";
 import localRoutes from "./utils/routes";
-import Footer from "remote_a/footer";
 
 const App = () => (
   <>

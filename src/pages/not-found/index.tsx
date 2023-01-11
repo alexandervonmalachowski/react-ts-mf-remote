@@ -8,6 +8,7 @@ const Page = ({ children }: PageType) => {
   return (
     <div>
       <h1>Not found</h1>
+      {children}
     </div>
   );
 };
